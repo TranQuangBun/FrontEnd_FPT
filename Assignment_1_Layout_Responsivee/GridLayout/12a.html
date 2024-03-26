@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<!-- Tran quang -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+.container{
+    display: grid;
+    padding: 10px;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 80px 180px 180px 50px;
+    grid-template-areas:
+    "header header header"
+    "leftcol midtop rightcol"
+    "leftcol midbottom rightcol"
+    "footer footer footer" ;
+}
+.gird-item {
+    border: 1px solid black;
+}
+.header{
+    background: #20b2aa;
+    grid-area: header;
+    height: 80px;
+}
+.LeftCol{
+    background: #ffa500;
+    grid-area: leftcol;
+}
+.MidTop {
+    background: #d3d3d3;
+    grid-area: midtop;
+}
+.MidBottom{
+    background: #ffc0cb;
+    grid-area: midbottom;
+}
+.RightCol{
+    background: #add8e6;
+    grid-area: rightcol;
+
+}
+.Footer{
+    background: #90ee90;
+    grid-area: footer;
+}
+    </style>
+    <title> 1.2.a</title>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="gird-item header ">Header</div>
+        <div class="gird-item LeftCol ">LeftCol</div>
+        <div class="gird-item MidTop " >MidTop</div>
+        <div class="gird-item MidBottom ">MidBottom</div>
+        <div class="gird-item RightCol ">RightCol</div>
+        <div class="gird-item Footer ">Footer</div>
+    </div>
+</body>
+</html>

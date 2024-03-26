@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+.container {
+    
+    display: grid;
+    grid-template-columns: 33% 33% 33% ;
+   grid-template-rows: 200px 180px 80px 300px;
+
+   grid-template-areas:
+    
+    " header header header"
+    "featureL featureCT featureR"
+    "signUp signUp signUp"
+    "content content content"
+    ;
+
+
+}
+.gird-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item1{
+    background: #b2d6ff;
+    grid-area: header;
+}
+
+.item2{
+    background: #f5cf8e;
+   
+    grid-area: featureL;
+}
+.item3{
+    background:#c8c6fe;
+    grid-area: featureCT;
+
+}
+.item4{
+    background: #f09a9d;
+    grid-area: featureR;
+}
+
+.item5{
+    background: #d6e9fe;
+    grid-area: signUp;
+
+}
+.item6{
+    background:#797f86;
+    grid-area: content;
+
+}
+
+@media  (max-width: 900px){
+    .container{
+        grid-template-columns: 50% 50% ;
+        grid-template-rows: 100px 200px 150px 150px;
+        grid-template-areas:
+        
+       "header header"
+       "content content"
+       "signUp featureL"
+       "featureCT featureR"
+        ;
+    }}
+
+    @media (max-width:400px) {
+        .container{
+            grid-template-columns: 100% ;
+            grid-template-rows: 100px 200px 100px 100px 100px 100px;
+            grid-template-areas:
+            
+           "header "
+           "content"
+           "signUp "
+           "featureL"
+           "featureR"
+           "featureCT"
+            ;
+        }}
+    </style>
+    <title>1.5.b</title>
+</head>
+<body>
+<div class="container">
+    <div class="gird-item item1">[HEADER]</div>
+   <div class="gird-item item2">[FEATURE]</div>
+<div class="gird-item item3">[FEATURE]</div>
+<div class="gird-item item4">[FEATURE]</div>
+    <div class="gird-item item5">[SIGN UP]</div>
+    <div class="gird-item item6">[CONTENT]</div>
+</div>
+</body>
+</html>
