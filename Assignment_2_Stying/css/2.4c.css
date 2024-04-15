@@ -1,0 +1,97 @@
+body {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container { 
+    display: flex;
+    gap: 10px;
+}
+
+.container .card {
+    flex: 1;
+}
+
+.card {
+    display: flex;
+    height: fit-content;
+    gap: 10px;
+}
+
+.card .image {
+    flex: 3;
+    position: relative;
+}
+.card img {
+    width: 100%;
+    height: 100%;
+}
+
+.cart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.card:hover .cart {
+    display: flex;
+    animation: fadeInFromBottom 0.5s ease-in-out;
+}
+
+.cart .border {
+    width: 100%;
+    height: 100%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.border div {
+    padding: 5px;
+    background: white;
+    color: #666;
+}
+
+
+
+@keyframes fadeInFromBottom {
+    0% {
+      transform: rotate(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: rotate(0);
+      opacity: 1;
+    }
+  }
+
+
+.card .desc {
+    flex: 8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #7b7b7b;
+    padding-right: 2%;
+    border-right: 2px solid #d2d2d2;
+}
+.card .cost {
+    flex: 1;
+    margin: auto;
+    color: #7b7b7b;
+}
+
+.cost span {
+    font-size: 25px;
+    font-weight: bold;
+}
+

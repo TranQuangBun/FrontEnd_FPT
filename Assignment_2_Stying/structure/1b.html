@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Website</title>
+    <style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 0;
+}
+.all-news {
+    float: right;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.news-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Khoảng cách giữa các mục tin tức */
+}
+
+.news-item img {
+    width: 120px; /* Điều chỉnh kích thước của hình ảnh */
+    height: auto;
+    margin-right: 10px; /* Khoảng cách giữa hình ảnh và nội dung */
+}
+
+.news-content {
+    flex: 1; /* Phần tử nội dung sẽ mở rộng để lấp đầy phần còn lại của không gian */
+}
+
+.news-content h3,
+.news-content p,
+.news-content a {
+    margin: 0; /* Reset margin */
+}
+
+
+.date {
+    font-style: italic;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.agent {
+    margin-bottom: 20px;
+}
+
+.agent img {
+    max-width: 100%;
+    height: auto;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Agent img */
+.agent {
+    display: flex;
+}
+
+.agent img {
+    width: 150px; /* Điều chỉnh kích thước của hình ảnh */
+    height: auto;
+    margin-right: 20px; /* Tạo khoảng cách giữa hình ảnh và nội dung */
+}
+
+.agent-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Căn giữa các phần tử */
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="column">
+            <h2>News<a class="all-news">All News</a></h2>
+            <hr>
+            <div class="news-item">
+                <img src="img/small_image.jpg" alt="Small Image">
+                <div class="news-content">
+                    <h3>Title 1</h3>
+                    <p class="date">Feb 14,2013</p>
+                    <p>Description of news item 1,cur ut dui lactsu sennectus et malsesuada.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <hr>
+            <div class="news-item">
+                <img src="img/small_image.jpg" alt="Small Image">
+                <div class="news-content">
+                    <h3>Title 1</h3>
+                    <p class="date">Feb 14,2013</p>
+                    <p>Description of news item 1,cur ut dui lactsu sennectus et malsesuada.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <hr>
+            <div class="news-item">
+                <img src="img/small_image.jpg" alt="Small Image">
+                <div class="news-content">
+                    <h3>Title 1</h3>
+                    <p class="date">Feb 14,2013</p>
+                    <p>Description of news item 1,cur ut dui lactsu sennectus et malsesuada.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            
+        </section>
+        <section class="column">
+            <h2>Welcome</h2>
+            <hr>
+            <img src="img/housse.jpg" alt="House with pool">
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non purus nec lorem elementum aliquet. Curabitur auctor malesuada purus.</p>
+            <p>Nulla at ante id nisi aliquet vestibulum. Duis consectetur congue viverra.</p>
+        </section>
+        <section class="column">
+            <h2>Agents<a class="all-news">All Agents</a></h2>
+            <hr>
+            <div class="agent">
+                <img src="img/agent.jpg" alt="Agent 1">
+                <div class="agent-info">
+                    <h3>Agent 1</h3>
+                    <p>Description of Agent 1. </p>
+                    <a href="#">Contact Agent</a>
+                </div>
+            </div>
+            <hr>
+            <div class="agent">
+                <img src="img/agent.jpg" alt="Agent 1">
+                <div class="agent-info">
+                    <h3>Agent 1</h3>
+                    <p>Description of Agent 1...</p>
+                    <a href="#">Contact Agent</a>
+                </div>
+            </div>
+            <hr>
+            <div class="agent">
+                <img src="img/agent.jpg" alt="Agent 1">
+                <div class="agent-info">
+                    <h3>Agent 1</h3>
+                    <p>Description of Agent 1...</p>
+                    <a href="#">Contact Agent</a>
+                </div>
+            </div>
+            
+        </section>
+    </div>
+    <hr>
+</body>
+</html>

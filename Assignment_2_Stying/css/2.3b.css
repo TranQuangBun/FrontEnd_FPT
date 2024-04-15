@@ -1,0 +1,83 @@
+input:focus {
+    outline: none;
+}
+.container {
+   
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #659adc, #d35624);
+    padding: 40px;
+    height: 100vh;
+}
+
+.title h1 {
+    color: #fff;
+}
+
+.main {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+}
+
+.main form {
+    flex: 1;
+    color: white;
+    background: rgba(128, 128, 128, 0.3);;
+    padding: 30px 40px;
+    height: fit-content;
+}
+
+form  h2{
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+form .input {
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    
+}
+
+.input input::placeholder {
+    color: white;
+}
+
+.input input {
+    color: #fff;
+    width: 95%;
+    border: none;
+    background: transparent;
+}
+
+.input i {
+    display: inline-block;
+}
+
+.btn_submit {
+    width: 100%;
+    display: flex;
+    gap: 10%;
+    
+}   
+button {
+    flex: 1;
+    text-align: center;
+    padding: 8px 20px;
+    color: white;
+    border: none;
+}
+.sign-in .btn_submit button:first-child, .sign-up button  {
+    background: #4b9d3a;
+}
+.sign-in .btn_submit button:last-child {
+    background: #c3382d;
+}
+
+

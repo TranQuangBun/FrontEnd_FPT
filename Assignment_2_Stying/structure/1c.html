@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Events</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Màu nền xanh nhạt */
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: center;
+}
+
+.event-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.event-date {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.red {
+    background-color: #ff6b6b; /* Màu đỏ */
+    color: white;
+}
+
+.blue {
+    background-color: #6c5ce7; /* Màu xanh */
+    color: white;
+}
+
+.green {
+    background-color: #00b894; /* Màu xanh lá cây */
+    color: white;
+}
+
+.event-details {
+    margin-left: 20px;
+}
+
+.full-calendar {
+    display: block;
+    text-align: right;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #007bff; /* Màu xanh dương */
+    float: right;
+    clear: both;
+    margin-top: 20px; /* Khoảng cách giữa nút và các sự kiện */
+}
+.full-calendar-link {
+    float: right;
+    clear: both;
+    margin-top: 30px; /* Khoảng cách giữa nút và các sự kiện */
+}
+
+.full-calendar:hover {
+    text-decoration: underline;
+}
+.transparent-button {
+    background-color: transparent;
+    border: 1px solid #000080; /* Màu viền xanh đậm */
+    color: #000080; /* Màu chữ xanh đậm */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.transparent-button:hover {
+    background-color: rgba(0, 0, 128, 0.1); /* Màu nền xanh đậm với độ trong suốt */
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Upcoming Events</h1>
+        <div class="event-box">
+            <div class="event-date red">12</div>
+            <div class="event-details">
+                <h2>Event 1</h2>
+                <p>Details of Event 1...</p>
+            </div>
+        </div>
+        <div class="event-box">
+            <div class="event-date blue">18</div>
+            <div class="event-details">
+                <h2>Event 2</h2>
+                <p>Details of Event 2...</p>
+            </div>
+        </div>
+        <div class="event-box">
+            <div class="event-date green">24</div>
+            <div class="event-details">
+                <h2>Event 3</h2>
+                <p>Details of Event 3...</p>
+            </div>
+        </div>
+        <div class="event-box">
+            <div class="event-date red">30</div>
+            <div class="event-details">
+                <h2>Event 4</h2>
+                <p>Details of Event 4...</p>
+            </div>
+        </div>
+        <div class="full-calendar-link">
+            <button class="transparent-button">See Full Events Calendar</button>
+        </div>
+        
+    </div>
+</body>
+</html>

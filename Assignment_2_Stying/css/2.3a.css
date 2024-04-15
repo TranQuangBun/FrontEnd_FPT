@@ -1,0 +1,57 @@
+.container {
+    display: flex;
+    color: white;
+    background: #eba102;
+    gap: 20px;
+    padding: 30px;
+    
+}
+
+.info {
+    flex: 1;
+}
+
+form {
+    flex: 2;
+}
+
+h2 {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: justify;
+}
+
+.input_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input_form input, textarea {
+    color: gray;
+    padding: 20px;
+    border: none;
+}
+
+.input_form div {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.input_form div input {
+    flex: 1;
+}
+
+.input_form textarea {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.input_form .btn_submit {
+    background: #2e2e2e;
+    color: white;
+    width: 50%;
+}

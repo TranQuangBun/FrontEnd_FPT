@@ -1,0 +1,112 @@
+.container{
+    padding: 30px;
+    background-color: #d0e3ea;
+}
+
+.header h1{
+    font-size: 40px;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.header::after {
+    content: '';
+    width: 3%;
+    border-bottom: 3px solid #5c99b2;
+    margin: 10px 120px;
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0px;
+}
+
+.detail-card{
+    display: flex;
+    width: 45%;
+}
+.card-1 .time{
+    padding: 20px;
+    background-color: red;
+}
+
+.card-2 .time{
+    padding: 20px;
+    background-color: #409063;
+}
+
+.card-3 .time{
+    padding: 20px;
+    background-color: #5696b0;
+}
+
+.time{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.time div:first-child{
+    font-size: 20px;
+    color: white;
+}
+
+.time div:last-child{
+    font-size: 40px;
+    color: white;
+}
+
+.info{
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    border-radius: 0px 5px 5px 0px
+
+}
+
+.info div:first-child{
+    font-size: 20px;
+    color: #de5646;
+    margin-bottom: 5px;
+}
+
+.info div:last-child{
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+.card-2 .info div:first-child{
+    font-size: 20px;
+    color: #409063;
+    margin-bottom: 5px;
+}
+
+.card-3 .info div:first-child{
+    font-size: 20px;
+    color: #5696b0;
+    margin-bottom: 5px;
+}
+
+.footer{
+    display: flex;
+    justify-content: end;
+}
+
+.footer div{
+    padding: 10px 15px;
+    color: #5696b0;
+    border-radius: 30px;
+    border: 1px solid #5696b0;
+    margin-right: 175px;
+}

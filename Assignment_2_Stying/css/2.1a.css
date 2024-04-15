@@ -1,0 +1,47 @@
+.header{
+    background-color: gainsboro;
+}
+
+.content-header{
+    padding: 80px;
+}
+
+.title, .detail{
+    margin-bottom: 15px;
+}
+
+.btn-learn{
+    padding: 10px;
+    background-color:aqua ;
+    border: 1px solid aqua;
+    border-radius: 5px;
+    color: white;
+}
+
+.content{
+    display: flex;
+    padding: 40px;
+    justify-content: space-between;
+}
+
+.card{
+   width: 32%;
+}
+
+.card h1, .card p {
+    margin-bottom: 15px;
+}
+
+.card p{
+    text-align: justify;
+}
+
+
+
+.btn-view{
+    padding: 10px;
+    background-color: grey;
+    border: 1px solid grey;
+    color: white;
+    border-radius: 5px;
+}
